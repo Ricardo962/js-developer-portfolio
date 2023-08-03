@@ -30,10 +30,6 @@
         {
           "name": "NodeJs",
           "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
-        },
-        {
-          "name": "VSCode",
-          "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/vscode.png"
         }
       ],
       "softSkills": [
