@@ -1,7 +1,7 @@
 
 function informacaoConfigPerfil(perfil) {
     const foto = document.getElementById('profile.photo')
-    foto.src = perfil.photo
+    console.log(foto.src = perfil.photo)
     foto.alt = perfil.name
 
     const name = document.getElementById('profile.name')
@@ -21,7 +21,7 @@ function informacaoConfigPerfil(perfil) {
     email.innerHTML = perfil.email
 }
 
-function updateHardsSkills(profileData){
+function updateHardsSkills(profileData) {
     const hardSkills = document.getElementById('profile.skills.hardSkills')
     hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => ` <li> <img src="${skill.logo}" class="photo" id="profile.photo"> </li>`).join('')
 }
@@ -31,11 +31,17 @@ function updateSoftSkills(profileData) {
     softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li> ${skill} </li>`).join('')
 }
 
+function updateIdiomas(profileData) {
+    const idioma = document.getElementById('profile.languages')
+    idioma.innerHTML = profileData.languages.map(idioma => `<li>${idioma}</li>`).join('')
+}
+
 (async () => {
     const perfil = await perfilApi()
     informacaoConfigPerfil(perfil)
     updateSoftSkills(perfil)
     updateHardsSkills(perfil)
+    updateIdiomas(perfil)
 
     console.log(perfil)
 })()
