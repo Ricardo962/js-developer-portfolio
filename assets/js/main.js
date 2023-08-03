@@ -21,18 +21,21 @@ function informacaoConfigPerfil(perfil) {
     email.innerHTML = perfil.email
 }
 
+function updateHardsSkills(profileData){
+    const hardSkills = document.getElementById('profile.skills.hardSkills')
+    hardSkills.innerHTML = profileData.skills.hardSkills.map(skill => ` <li> <img src="${skill.logo}" class="photo" id="profile.photo"> </li>`).join('')
+}
+
 function updateSoftSkills(profileData) {
     const softSkills = document.getElementById('profile.skills.softSkills')
     softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li> ${skill} </li>`).join('')
-
-    const hardSkills = document.getElementById('profile.skills.hardSkills')
-    hardSkillsSkills.innerHTML = profileData.skills.hardSkills.logo.map(img => `<li> ${img} </li>`).join('')
 }
 
 (async () => {
     const perfil = await perfilApi()
     informacaoConfigPerfil(perfil)
     updateSoftSkills(perfil)
+    updateHardsSkills(perfil)
 
     console.log(perfil)
 })()
