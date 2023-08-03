@@ -1,11 +1,11 @@
 {
-    "name": "Edson Ricardo",
-    "photo": "https://avatars.githubusercontent.com/u/114768556?s=400&u=e5123847b1389ab30a4579e3a8fcf4eee3e640b0&v=4",
-    "job": "Tech Lead no S3 Bank",
-    "location": "Altos - PI",
-    "phone": "(99) 991242614",
-    "email": "edsonricardo962@gmail.com",
-    "skills": {
+  "name": "Edson Ricardo",
+  "photo": "https://avatars.githubusercontent.com/u/114768556?s=400&u=e5123847b1389ab30a4579e3a8fcf4eee3e640b0&v=4",
+  "job": "Estudante",
+  "location": "Altos - PI",
+  "phone": "(99) 99124-2614",
+  "email": "edsonricardo962@gmail.com",
+  "skills": {
       "hardSkills": [
         {
           "name": "Css3",
@@ -44,15 +44,32 @@
       "Inglês (básico)"
     ],
     "portfolio": [
-      {
-        "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
-        "url": "https://github.com/RenanJPaula/js-developer-pokedex",
-        "github": true
-      },
-      {
-        "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
-        "url": "https://github.com/RenanJPaula/js-developer-portfolio",
-        "github": true
-      }
-    ]
-  }
+    {
+      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
+      "url": "https://github.com/RenanJPaula/js-developer-pokedex",
+      "github": true
+    },
+    {
+      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
+      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
+      "github": true
+    }
+  ],
+  "professionalExperience": [
+    {
+      "name": "Arquiteto de software / S3 BANK",
+      "period": "2022 - até o momento",
+      "description": "É um prazer trabalhar ao lado de tantos profissionais excepcionais e construir tantas inovações de mercado."
+    },
+    {
+      "name": "Software Engineering Lead / DIO",
+      "period": "2021 - 2022",
+      "description": "Foi um grande prazer fazer parte deste time fantástico e poder contribuir com a transformação de tantas vidas."
+    },
+    {
+      "name": "CEO / Brain Machine",
+      "period": "2016 - 2021",
+      "description": "Anos incríveis ao lado de pessoas maravilhosas ajudando muitas empresas por todo o mundo."
+    }
+  ]
+}
