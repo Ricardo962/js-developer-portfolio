@@ -44,28 +44,6 @@
       "Inglês (básico)"
     ],
     "portfolio": [
-      {
-        "name": "Nodejs",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/nodejs.png"
-      },
-      {
-        "name": "JavaScript",
-        "logo": "https://raw.githubusercontent.com/digitalinnovationone/js-developer-portfolio/main/data/imgs/java.png"
-      }
-    ],
-    "softSkills": [
-      "Empatia",
-      "Liderança",
-      "Trabalho em equipe",
-      "Flexibilidade",
-      "Organização"
-    ]
-  },
-  "languages": [
-    "Português BR",
-    "Inglês (básico)"
-  ],
-  "portfolio": [
     {
       "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
       "url": "https://github.com/RenanJPaula/js-developer-pokedex",
