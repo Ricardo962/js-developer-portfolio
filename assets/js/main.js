@@ -36,12 +36,25 @@ function updateIdiomas(profileData) {
     idioma.innerHTML = profileData.languages.map(idioma => `<li>${idioma}</li>`).join('')
 }
 
+function updatePortifolio(profileData) {
+    const portifolio = document.getElementById('profile.portfolio')
+    portifolio.innerHTML = profileData.portfolio.map(portifolio =>  {
+        return  `
+        <li>
+            <h3>${portifolio.name}</h3>
+            <a href="${portifolio.url}">${portifolio.url}</a>
+        </li>`  
+    }).join('')
+}
+
+
 (async () => {
     const perfil = await perfilApi()
     informacaoConfigPerfil(perfil)
     updateSoftSkills(perfil)
     updateHardsSkills(perfil)
     updateIdiomas(perfil)
+    updatePortifolio(perfil)
 
     console.log(perfil)
 })()
