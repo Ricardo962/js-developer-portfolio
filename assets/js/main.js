@@ -47,6 +47,10 @@ function updatePortifolio(profileData) {
     }).join('')
 }
 
+function updateExperience(profileData){
+    const experience = document.getElementById('profile.professionalExperience')
+    experience.innerHTML = profileData.professionalExperience.map(experience => `<li>${experience.description}</li>`)
+}
 
 (async () => {
     const perfil = await perfilApi()
@@ -55,6 +59,8 @@ function updatePortifolio(profileData) {
     updateHardsSkills(perfil)
     updateIdiomas(perfil)
     updatePortifolio(perfil)
+    updateExperience(perfil)
 
     console.log(perfil)
 })()
+
